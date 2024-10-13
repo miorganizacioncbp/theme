@@ -24,6 +24,10 @@ author     : Your Name
   # path: assets\img\clients\creative-market.jpg
   # height: 60 #height in px, defaults to 52px
 
+#favicon:
+#  path: "/assets/images/favicon.ico" # Ruta de tu favicon
+#  type: "image/x-icon"               # Tipo de imagen
+
 locale: "en-US" # See available languages in _data/sitetext.yml
 
 analytics:

@@ -20,6 +20,10 @@
   <meta name="author" content="{{ site.author }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+  {% if site.favicon.path %}
+  <link rel="icon" href="{{ site.baseurl }}{{ site.favicon.path }}" type="{{ site.favicon.type | default: 'image/x-icon' }}">
+  {% endif %}
+  
   <title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <!-- Bootstrap core CSS -->
