@@ -199,6 +199,11 @@ es: &DEFAULT_ES
     section: portafolio
     closebutton: "Cerrar Proyecto"
 
+  galeria:
+    title: "Galeria de fotos"
+    text: ""
+    section: galeria
+
   timeline:
     title: "Cronología"
     text: "Lorem ipsum timeline"

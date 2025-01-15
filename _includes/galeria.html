@@ -1,0 +1,19 @@
+<!-- Galería -->
+<section class="bg-light page-section" id="galeria">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Galería de fotos</h2>
+      </div>  
+    </div>
+    <div class="row">
+      {% for image in site.galeria %}
+      <div class="col-md-3 col-sm-6 gallery-item">
+        <div class="gallery-image">
+          <img class="img-fluid" src="{{ image.url }}" alt="">
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
