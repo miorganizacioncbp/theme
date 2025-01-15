@@ -64,6 +64,12 @@ en: &DEFAULT_EN
         url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/creative-market.jpg
 
+  galeria:
+    title: "Galeria de Imagenes"
+    text: ""
+    subtext: 
+    section: galeria
+
   team:
     title: "OUR AMAZING TEAM"
     text: "Lorem ipsum dolor sit amet consectetur."
@@ -172,6 +178,11 @@ es: &DEFAULT_ES
     title: "Galeria de fotos"
     text: ""
     section: galeria
+    list:
+      - url: assets/img/galeria/foto1.jpg
+      - url: assets/img/galeria/foto2.jpg
+      - url: assets/img/galeria/foto3.jpg
+      - url: assets/img/galeria/foto4.jpg
 
   about:
     title: "Sobre nosotros"

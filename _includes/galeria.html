@@ -7,13 +7,15 @@
       </div>  
     </div>
     <div class="row">
-      {% for image in site.galeria %}
-      <div class="col-md-3 col-sm-6 gallery-item">
-        <div class="gallery-image">
-          <img class="img-fluid" src="{{ image.url }}" alt="">
+      {% for fotos in site.data.sitetext[site.locale].galeria.list %}
+        <div class="col-md-3 col-sm-6 gallery-item">
+          <div class="gallery-image">
+            <img class="img-fluid" src="{{ fotos.url }}" alt="Galería de fotos">
+          </div>
         </div>
-      </div>
       {% endfor %}
+
+
     </div>
   </div>
 </section>

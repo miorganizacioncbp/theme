@@ -36,13 +36,13 @@ es: &DEFAULT_ES
   nav:
     - title: "Servicios"
       section: servicios
-    - title: "Portafolio"
-      section: portafolio
-    - title: "Sobre Nosotros"
-      section: nosotros
     - title: "Equipo"
-      section: equipo
-    - title: "Contáctenos"
+      section: portfolio
+    - title: "Nosotros"
+      section: nosotros
+    - title: "Galeria"
+      section: galeria
+    - title: "Contactanos"
       section: contacto
 es-ES:
   <<: *DEFAULT_ES

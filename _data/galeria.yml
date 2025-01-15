@@ -1,4 +1,5 @@
-- url: assets/img/equipos/foto1.jpg
-- url: assets/img/equipos/foto2.jpg
-- url: assets/img/equipos/foto3.jpg
-- url: assets/img/equipos/foto4.jpg
+galeria:
+- url: assets\img\galeria\foto1.jpg
+- url: assets\img\galeria\foto2.jpg
+- url: assets\img\galeria\foto3.jpg
+- url: assets\img\galeria\foto4.jpg
