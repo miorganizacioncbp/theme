@@ -133,16 +133,6 @@ This project is intended to be a welcoming space for collaboration. If you have 
 
 For bug reports, follow the provided template.
 
-#### Improvements - Up for Grabs
-
-- [x] multiple language support thanks to [@rbenitezpagan](https://github.com/rbenitezpagan)
-  - [x] Spanish thanks to [@rbenitezpagan](https://github.com/rbenitezpagan)
-  - [x] German thanks to [@bkfirmen](https://github.com/bkfirmen)
-  - [ ] Chinese
-  - [ ] Arabic
-  - [ ] etc
-- [ ] customizable background coloring for each section
-
 ## Development
 
 To set up your environment to develop this theme, clone this repo or your fork.
