@@ -1,0 +1,13 @@
+.client-logo {
+    display: block;
+    text-align: center;
+    font-size: 24px;  // Tamaño de letra mediano
+    color: #888888;   // Gris oscuro
+    font-weight: normal;  // Si deseas cambiar el grosor de la letra
+    text-decoration: none;  // Quitar el subrayado por defecto en enlaces
+    transition: color 0.3s ease; // Para añadir un pequeño efecto de transición al pasar el mouse
+  
+    &:hover {
+      color: #333333;  // Gris más oscuro cuando el mouse pase por encima
+    }
+  }  

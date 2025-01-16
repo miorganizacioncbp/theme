@@ -207,6 +207,9 @@ es: &DEFAULT_ES
       - title: "Creative Market"
         url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/creative-market.jpg
+  
+  wpp:
+    url: "https://wa.me/+549123456789"
 
   team:
     title: "NUESTRO INCREÍBLE EQUIPO"
