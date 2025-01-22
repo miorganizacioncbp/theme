@@ -10,7 +10,8 @@
   height: 60px;
   font-size: 30px;  // Tamaño del ícono
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  // Sombra para dar un poco de profundidad
-  transition: background-color 0.3s ease;  // Transición para el hover
+  transition: background-color 0.3s ease;
+  z-index: 9999;  
 
   &:hover {
     background-color: #128C7E;  // Color de fondo cuando pasa el mouse

@@ -1,6 +1,7 @@
 // Styling for the navbar
 #mainNav {
   background-color: white;
+
   .navbar-toggler {
     font-size: 12px;
     right: 0;
@@ -8,19 +9,29 @@
     text-transform: uppercase;
     color: $primary;
     border: 0;
-    background-color: $primary;
+    background-color: rgb(243, 240, 240);
     @include heading-font;
   }
+
   .navbar-brand {
     color: $primary;
     @include script-font;
+
     &.active,
     &:active,
     &:focus,
     &:hover {
       color: darken($primary, 10%);
     }
+
+    img {
+      max-height: 50px; // Tamaño máximo para pantallas normales
+      height: auto; // Ajuste automático para mantener proporciones
+      width: auto; // Asegura que no se deforme
+      transition: all 0.3s ease; // Transición suave para cambios
+    }
   }
+
   .navbar-nav {
     .nav-item {
       .nav-link {
@@ -28,8 +39,9 @@
         font-weight: 700;
         padding: 0.75em 0;
         letter-spacing: 1px;
-        color: white;
+        color: rgb(0, 0, 0);
         @include heading-font;
+
         &.active,
         &:hover {
           color: $primary;
@@ -38,6 +50,29 @@
     }
   }
 }
+
+// Media queries para pantallas más pequeñas
+@media (max-width: 768px) {
+  #mainNav {
+    .navbar-brand {
+      img {
+        max-height: 40px; // Tamaño más pequeño para dispositivos medianos
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #mainNav {
+    .navbar-brand {
+      img {
+        max-height: 30px; // Tamaño aún más pequeño para pantallas pequeñas
+      }
+    }
+  }
+}
+
+// Configuración para pantallas grandes (min-width: 992px)
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
@@ -47,12 +82,18 @@
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
+
     .navbar-brand {
       font-size: 1.75em;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
+
+      img {
+        max-height: 50px; // Tamaño máximo del logo para pantallas grandes
+      }
     }
+
     .navbar-nav {
       .nav-item {
         .nav-link {
@@ -60,21 +101,27 @@
           color: rgb(0, 0, 0);
           font-weight: 700;
           @include heading-font;
+
           &.active,
           &:hover {
             color: $primary;
           }
-          
         }
       }
     }
+
     &.navbar-shrink {
       padding-top: 0;
       padding-bottom: 0;
       background-color: white;
+
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
+
+        img {
+          max-height: 40px; // Logo más pequeño cuando el navbar está comprimido
+        }
       }
     }
   }
