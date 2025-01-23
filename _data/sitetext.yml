@@ -22,13 +22,13 @@ en: &DEFAULT_EN
     section: services
     list:
       - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
         icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
       - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. ."
         icon: fas fa-laptop
       - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.."
         icon: fas fa-laptop
       - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
         desc: "Your description here, full **Markdown** support"
@@ -159,10 +159,10 @@ es: &DEFAULT_ES
     section: servicios
     list:
       - title: "Comercio Electrónico"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
         icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
       - title: "Diseño Responsivo"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
         icon: fas fa-laptop
       - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
         desc: "Su descripción aquí, soporte completo de **Markdown**"

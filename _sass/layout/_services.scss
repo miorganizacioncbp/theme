@@ -14,3 +14,51 @@
 .col-6 {
   margin-bottom: 20px; // Espaciado entre elementos
 }
+
+.icon-responsive {
+  font-size: 50%;
+}
+
+@media (max-width: 768px) {
+  .icon-responsive {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .icon-responsive {
+    font-size: 50%;
+  }
+}
+
+.scroll-container {
+  display: flex; /* Flexbox para mantener los ítems en fila */
+  flex-wrap: nowrap; /* Evita que los ítems bajen a otra fila */
+  gap: 0.5rem; /* Espacio entre ítems */
+  overflow-x: auto; /* Activa el scroll horizontal */
+  padding-bottom: 1rem; /* Espacio para evitar recortes al hacer scroll */
+  scroll-behavior: smooth; /* Desplazamiento suave */
+  scroll-snap-type: x mandatory; /* Ancla los ítems para un desplazamiento uniforme */
+}
+
+.scroll-container > div {
+  scroll-snap-align: start; /* Cada ítem se alinea al inicio */
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 6px; /* Tamaño del scrollbar horizontal */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color del scrollbar */
+  border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color del scrollbar al pasar el mouse */
+}
+
+
+
+
+
