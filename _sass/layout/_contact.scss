@@ -44,4 +44,28 @@ section#contact {
     color: $gray-400;
     @include heading-font;
   }
+  
 }
+
+/* Botón responsivo */
+.btn-responsive {
+  padding: 1rem 2rem; /* Tamaño por defecto */
+  font-size: 1.25rem; /* Tamaño de texto por defecto */
+}
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .btn-responsive {
+    padding: 0.75rem 1.5rem; /* Reducir tamaño */
+    font-size: 1rem; /* Reducir tamaño de texto */
+  }
+}
+
+/* Pantallas pequeñas (celulares) */
+@media (max-width: 576px) {
+  .btn-responsive {
+    padding: 0.5rem 1rem; /* Tamaño más pequeño */
+    font-size: 0.875rem; /* Texto más pequeño */
+  }
+}
+

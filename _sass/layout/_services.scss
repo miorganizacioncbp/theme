@@ -3,3 +3,14 @@
   margin: 15px 0;
   text-transform: none;
 }
+
+.row {
+  margin-bottom: 30px; // Espaciado entre filas
+}
+
+.col-lg-3,
+.col-md-4,
+.col-sm-6,
+.col-6 {
+  margin-bottom: 20px; // Espaciado entre elementos
+}

@@ -14,7 +14,7 @@
 	  
       <div class="row justify-content-center">
 	  {% for service in site.data.sitetext[site.locale].services.list %}
-        <div class="col-md-3 text-center">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="{{ service.icon | default: "fas fa-shopping-cart" }} fa-stack-1x fa-inverse"></i>
