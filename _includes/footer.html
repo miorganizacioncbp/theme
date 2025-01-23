@@ -1,15 +1,16 @@
 <!-- Footer -->
-<footer class="footer" id="footer" style="background-color: white">
-  <div class="container">
-    {% if site.locale and site.locale != "" and site.locale != nil %}
-    <div class="row align-items-center">
-      <div class="col-md-4">
-        <span class="copyright"
-          >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
-        >
-      </div>
-      <!-- Social Media -->
-      <div class="col-md-4">
+<footer id="footer" class="text-center text-lg-start bg-body-tertiary text-muted footer">
+  {% if site.locale and site.locale != "" and site.locale != nil %}
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block footer-div">
+      <span>{{site.data.sitetext[site.locale].footer.socialtitle}}</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
         <ul class="list-inline social-buttons">
           {% for link in site.data.sitetext[site.locale].footer.social %}
           <li class="list-inline-item">
@@ -21,54 +22,90 @@
           </li>
           {% endfor %}
         </ul>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">{{ site.title }}</h6>
+          <p>
+            {{ site.description }}
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            {{site.data.sitetext[site.locale].footer.navtitle}}
+          </h6>
+          {%- for link in site.data.navigation[site.locale].nav -%}
+            <p>
+              {%- if link.url -%}
+              <a class="js-scroll-trigger" href="{{ link.url }}"
+                >{{ link.title }}</a
+              >
+              {%- elsif link.section -%}
+              <a
+                class="js-scroll-trigger"
+                href="{{ site.baseurl }}/#{{ link.section }}"
+                >{{ link.title }}</a
+              >
+              {%- else -%}
+              <a class="js-scroll-trigger" href="#">{{ link.title }}</a>
+              {%- endif -%}
+
+            </p>
+         
+          {%- endfor -%}
+          
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">{{ site.data.sitetext[site.locale].footer.contact.title}}</h6>
+          <p><i class="fas fa-home me-3"></i> {{ site.data.sitetext[site.locale].footer.contact.address}}</p>
+          <p><i class="fas fa-envelope me-3"></i>{{ site.data.sitetext[site.locale].footer.contact.email}}</p>
+          <p><i class="fas fa-phone me-3"></i> {{ site.data.sitetext[site.locale].footer.contact.phone}}</p>
+        </div>
+        <!-- Grid column -->
       </div>
-      <!-- Legal -->
-      <div class="col-md-4">
-        <ul class="list-inline quicklinks">
-          <li class="list-inline-item">
-            <a href="legal"
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    <ul class="list-inline quicklinks">
+      <li class="list-inline-item">
+        <a href="legal"
               >{{ site.data.sitetext[site.locale].footer.legal | default:
               "Privacy Policy" }}</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-    {% else %}
-    <div class="row align-items-center">
-      <div class="col-md-4">
-        <span class="copyright"
+        >
+      </li>
+    </ul>
+    <span class="copyright"
           >Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span
         >
-      </div>
-      <!-- Social Media -->
-      <div class="col-md-4">
-        <ul class="list-inline social-buttons">
-          {% for link in site.data.sitetext.footer.social %}
-          <li class="list-inline-item">
-            {% if link.url %}
-            <a href="{{ link.url }}">
-              {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
-            </a>
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      <!-- Legal -->
-      <div class="col-md-4">
-        <ul class="list-inline quicklinks">
-          <li class="list-inline-item">
-            <a href="legal"
-              >{{ site.data.sitetext.footer.legal | default:
-              "Privacy Policy" }}</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-    {% endif %}
   </div>
+  <!-- Copyright -->
+
+
+  {% endif %}
 </footer>
 {% if page.layout == "page" %}
 <script>
@@ -84,4 +121,3 @@
   }
 </script>
 {% endif %}
-<!-- End Footer -->

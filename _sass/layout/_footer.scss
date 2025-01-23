@@ -2,6 +2,7 @@
 .footer {
   padding: 25px 0;
   text-align: center;
+  background-color: rgb(235, 235, 235);
   span.copyright {
     font-size: 90%;
     line-height: 40px;
@@ -16,6 +17,7 @@
     @include heading-font;
   }
 }
+
 
 ul.social-buttons {
   margin-bottom: 0;

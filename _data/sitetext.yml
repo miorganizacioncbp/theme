@@ -268,6 +268,7 @@ es: &DEFAULT_ES
 
   footer:
     legal: "Política de Privacidad"
+    socialtitle: "Síguenos en nuestras redes sociales"
     social:
       - url: https://twitter.com
         icon: "fab fa-twitter"
@@ -279,6 +280,12 @@ es: &DEFAULT_ES
         icon: "fab fa-github"
       - url: https://instagram.com
         icon: "fab fa-instagram"
+    navtitle: "Conocenos"
+    contact:
+      title: "Contactanos"
+      address: "1234 Somewhere Road #5432"
+      email: "@example.com"
+      phone: "+1 800 123 4567"
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
