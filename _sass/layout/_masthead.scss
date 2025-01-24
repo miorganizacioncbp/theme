@@ -27,6 +27,15 @@ header.masthead {
     }
   }
 }
+@media (max-width: 576px) {
+  header.masthead {
+    .intro-text {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+}
 @media (min-width: 768px) {
   header.masthead {
     .intro-text {

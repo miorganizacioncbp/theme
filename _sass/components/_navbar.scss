@@ -55,9 +55,13 @@
 @media (max-width: 768px) {
   #mainNav {
     .navbar-brand {
+      margin-left: 10px;
       img {
         max-height: 40px; // Tamaño más pequeño para dispositivos medianos
       }
+    }
+    .navbar-toggler {
+      margin-right: 20px;
     }
   }
 }
@@ -65,9 +69,13 @@
 @media (max-width: 576px) {
   #mainNav {
     .navbar-brand {
+      margin-left: 10px;
       img {
         max-height: 30px; // Tamaño aún más pequeño para pantallas pequeñas
       }
+    }
+    .navbar-toggler {
+      margin-right: 20px;
     }
   }
 }
@@ -88,6 +96,7 @@
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
+      margin-left: 10px;
 
       img {
         max-height: 50px; // Tamaño máximo del logo para pantallas grandes

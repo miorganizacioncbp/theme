@@ -43,7 +43,7 @@ es: &DEFAULT_ES
     - title: "Galeria"
       section: galeria
     - title: "Contactanos"
-      section: contacto
+      section: contact
 es-ES:
   <<: *DEFAULT_ES
 es-CO:
