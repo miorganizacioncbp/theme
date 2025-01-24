@@ -10,12 +10,44 @@
       {% for fotos in site.data.sitetext[site.locale].galeria.list %}
         <div class="col-lg-3 col-md-4 col-sm-6 col-6 gallery-item">
           <div class="gallery-image">
-            <img class="img-fluid" src="{{ fotos.url }}" alt="Galería de fotos">
+            <img
+              class="img-fluid"
+              src="{{ fotos.url }}"
+              alt="Galería de fotos"
+              data-bs-toggle="modal"
+              data-bs-target="#imageModal"
+              onclick="showImageInModal(this.src)"
+            />
           </div>
         </div>
+          <!-- Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background: transparent; border: none; box-shadow: none;">
+              <div class="modal-body p-0 text-center">
+                <img
+                  id="modalImage"
+                  class="img-fluid"
+                  src=""
+                  alt="Imagen ampliada"
+                  style="max-height: 90vh; max-width: 90vw; border-radius: 10px;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
       {% endfor %}
 
+      
 
     </div>
   </div>
 </section>
+
+<script>
+  function showImageInModal(imageSrc) {
+    const modalImage = document.getElementById("modalImage");
+    modalImage.src = imageSrc; // Actualiza la imagen dentro del modal
+  }
+</script>
