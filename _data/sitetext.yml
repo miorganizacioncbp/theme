@@ -180,9 +180,6 @@ es: &DEFAULT_ES
     section: galeria
     list:
       - url: assets/img/galeria/foto1.jpg
-      - url: assets/img/galeria/foto2.jpg
-      - url: assets/img/galeria/foto3.jpg
-      - url: assets/img/galeria/foto4.jpg
 
   about:
     title: "Sobre nosotros"

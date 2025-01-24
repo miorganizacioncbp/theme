@@ -7,7 +7,7 @@ caption: #what displays in the portfolio grid:
 #what displays when the item is clicked:
 title: Title
 subtitle: subtitle lorem ipsum dolor sit amet consectetur.
-image: #main image, can be a link or a file in assets/img/portfolio
+image: assets\img\galeria\foto1.jpg
 alt: image alt text
 
 ---
