@@ -42,7 +42,25 @@ ul.social-buttons {
       }
     }
   }
-  i{
-    margin-left: 15px;
+
+  @media (min-width: 992px) {
+    .social-icon{
+      margin-left:15px; 
+    }
   }
+
+  @media (max-width: 576px) {
+    .social-icon{
+      margin-left:0px; 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .social-icon{
+      margin-left:0px; 
+    }
+  }
+
+ 
 }
+
