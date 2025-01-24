@@ -23,27 +23,27 @@
               <h2>{{ project.title }}</h2>
               <p class="item-intro text-muted">{{ project.subtitle }}</p>
 
-              <div class="row">
-              {% for foto in project.image %}
-              <div class="col-lg-4 col-md-4 col-sm-6 col-6 gallery-item">
+              <div class="row justify-content-center" >
+                {% for foto in project.image %}
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 gallery-item">
 
-                  <div class="gallery-image">
-                    <img class="img-fluid" src="{{ foto.url }}" >
+                    <div class="gallery-image">
+                      <img class="img-fluid" src="{{ foto.url }}" >
+                    </div>
                   </div>
+                {% endfor %}
                 </div>
-              {% endfor %}
-              </div>
-             
-              <p>{{ project.content }}</p>
-              <button
-                class="btn btn-primary"
-                data-dismiss="modal"
-                type="button"
-              >
-                <i class="fas fa-times"></i>
-                {{ site.data.sitetext[site.locale].portfolio.closebutton |
-                default: "Close Project" }}
-              </button>
+              
+                <p>{{ project.content }}</p>
+                <button
+                  class="btn btn-primary"
+                  data-dismiss="modal"
+                  type="button"
+                >
+                  <i class="fas fa-times"></i>
+                  {{ site.data.sitetext[site.locale].portfolio.closebutton |
+                  default: "Close Project" }}
+                </button>
             </div>
           </div>
         </div>
