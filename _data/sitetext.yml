@@ -255,7 +255,7 @@ es: &DEFAULT_ES
   contact:
     title: "Contáctenos"
     text: "Lorem ipsum or call 123456789"
-    section: contacto
+    section: contact
     name: "Nombre*"
     name-validation: "Por favor ingrese su nombre."
     email: "Correo Electrónico*"
