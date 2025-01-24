@@ -54,29 +54,37 @@
 // Media queries para pantallas más pequeñas
 @media (max-width: 768px) {
   #mainNav {
+    background-color: transparent;
     .navbar-brand {
       margin-left: 10px;
       img {
-        max-height: 40px; // Tamaño más pequeño para dispositivos medianos
+        max-height: 50px; // Tamaño más pequeño para dispositivos medianos
       }
     }
     .navbar-toggler {
       margin-right: 20px;
     }
+    &.navbar-shrink {
+      background-color: white;
+   }
   }
 }
 
 @media (max-width: 576px) {
   #mainNav {
+    background-color: transparent;
     .navbar-brand {
       margin-left: 10px;
       img {
-        max-height: 30px; // Tamaño aún más pequeño para pantallas pequeñas
+        max-height: 40px; // Tamaño aún más pequeño para pantallas pequeñas
       }
     }
     .navbar-toggler {
       margin-right: 20px;
     }
+    &.navbar-shrink {
+      background-color: white;
+   }
   }
 }
 
