@@ -1,6 +1,6 @@
 // Styling for the masthead
 header.masthead {
-  text-align: center;
+  text-align: left;
   color: white;
   background-image: url("#{$header-image}");
   background-repeat: no-repeat;
@@ -14,14 +14,15 @@ header.masthead {
       font-size: 22px;
       line-height: 22px;
       margin-bottom: 25px;
-      @include serif-font;
+      @include fjalla-font;
     }
     .intro-heading {
       font-size: 50px;
       font-weight: 700;
       line-height: 50px;
       margin-bottom: 25px;
-      @include heading-font;
+      @include fjalla-font;
+
     }
   }
 }
@@ -34,14 +35,14 @@ header.masthead {
         font-size: 40px;
         line-height: 40px;
         margin-bottom: 25px;
-        @include serif-font;
+        @include fjalla-font;
       }
       .intro-heading {
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
         margin-bottom: 50px;
-        @include heading-font;
+        @include fjalla-font;
       }
     }
   }
