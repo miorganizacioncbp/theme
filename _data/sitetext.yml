@@ -38,7 +38,6 @@ en: &DEFAULT_EN
     title: "Portfolio"
     text: "Lorem ipsum dolor sit amet consectetur."
     section: portfolio
-    closebutton: "Close Project"
 
   about:
     title: "About Us"
@@ -172,7 +171,6 @@ es: &DEFAULT_ES
     title: "Portafolio"
     text: "Lorem ipsum dolor sit amet consectetur."
     section: portafolio
-    closebutton: "Cerrar Proyecto"
 
   galeria:
     title: "Galeria de fotos"
