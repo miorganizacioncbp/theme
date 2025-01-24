@@ -191,6 +191,7 @@ es: &DEFAULT_ES
     section: nosotros
 
   clients:
+    title: "Clientes"
     section: clientes
     max-height: 100px
     horizontal-scrolling: "" #"yes/no"
