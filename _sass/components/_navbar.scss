@@ -55,6 +55,9 @@
 @media (max-width: 768px) {
   #mainNav {
     background-color: transparent;
+    .navbar-collapse {
+      background-color: white;
+    }
     .navbar-brand {
       margin-left: 10px;
       img {
@@ -66,13 +69,23 @@
     }
     &.navbar-shrink {
       background-color: white;
-   }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          margin-left: 10px;
+        }
+      }
+    }
   }
 }
 
 @media (max-width: 576px) {
   #mainNav {
     background-color: transparent;
+    .navbar-collapse {
+      background-color: white;
+    }
     .navbar-brand {
       margin-left: 10px;
       img {
@@ -84,7 +97,14 @@
     }
     &.navbar-shrink {
       background-color: white;
-   }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          margin-left: 10px;
+        }
+      }
+    }
   }
 }
 
