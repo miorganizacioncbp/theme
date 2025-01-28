@@ -44,6 +44,15 @@
           {%- endif -%}
         </li>
         {%- endfor -%}
+
+        <!-- Botón de Llamar -->
+        <div class="call-button">
+          <i class="fas fa-phone"></i> 
+          Llamar:
+          <a href="tel:+5492302560570" class="call-link"> +54 9 2302 560570
+          </a>
+        </div>
+        
       {% else %}
         {%- for link in site.data.navigation.nav -%}
         <li class="nav-item">

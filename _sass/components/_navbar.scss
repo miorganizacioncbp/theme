@@ -49,12 +49,36 @@
       }
     }
   }
+
+  .call-button {
+    margin-left: auto;
+    font-weight: bold;
+    color: #033e7d;
+    @include fjalla-font;
+  }
+  
+  .call-link {
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+    font-weight: bold;
+    display: flex;
+    align-items: left;
+  }
+  
+  .call-link i {
+    margin-right: 5px;
+    font-size: 16px;
+  }
+  
+  /* Hover effects */
+  .nav-links a:hover, .call-link:hover {
+    color: #033e7d;
+  }
 }
 
 // Media queries para pantallas más pequeñas
 @media (max-width: 768px) {
   #mainNav {
-    background-color: transparent;
     .navbar-collapse {
       background-color: white;
     }
@@ -77,12 +101,14 @@
         }
       }
     }
+    .call-button{
+      margin-left: 10px;
+    }
   }
 }
 
 @media (max-width: 576px) {
   #mainNav {
-    background-color: transparent;
     .navbar-collapse {
       background-color: white;
     }
@@ -104,6 +130,9 @@
           margin-left: 10px;
         }
       }
+    }
+    .call-button{
+      margin-left: 10px;
     }
   }
 }

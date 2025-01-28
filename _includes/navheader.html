@@ -26,6 +26,15 @@
             {%- endif -%}
           </li>
         {% endfor %}
+
+          <!-- Botón de Llamar -->
+          <div class="call-button">
+            <i class="fas fa-phone"></i> 
+            Llamar:
+            <a href="tel:{{site.data.sitetext[site.locale].footer.contact.phone}}" class="call-link"> {{site.data.sitetext[site.locale].footer.contact.phone}}
+            </a>
+          </div>
+
         {% else %}
         {% for link in site.data.navigation.nav %}
         <li class="nav-item">
@@ -38,8 +47,11 @@
           {%- endif -%}
         </li>
         {% endfor %}
+        
         {% endif %}
         </ul>
+
+         
       </div>
     </div>
   </nav>
