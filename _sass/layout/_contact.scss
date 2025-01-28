@@ -59,14 +59,27 @@ section#contact {
 
 /* Pantallas medianas (tablets) */
 @media (max-width: 768px) {
+  section#contact {
+    background-position: -80px center;
+    background-size: cover;
+  }
   .btn-responsive {
     padding: 0.75rem 1.5rem; /* Reducir tamaño */
     font-size: 1rem; /* Reducir tamaño de texto */
   }
 }
 
+img {
+  position: relative; /* Necesario si el contenedor está en posición estática */
+  transform: translateX(-10px); /* Mueve la imagen 10px hacia la izquierda */
+}
+
 /* Pantallas pequeñas (celulares) */
 @media (max-width: 576px) {
+  section#contact {
+    background-position: -80px center;
+    background-size: cover;
+  }
   .btn-responsive {
     padding: 0.5rem 1rem; /* Tamaño más pequeño */
     font-size: 0.875rem; /* Texto más pequeño */

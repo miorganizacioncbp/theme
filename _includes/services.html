@@ -17,7 +17,7 @@
         {% for service in site.data.sitetext[site.locale].services.list %}
           <div id="scrollElement" class="col-lg-3 col-md-4 col-sm-6 col-6 text-center">
             <span class="fa-stack fa-3x icon-responsive">
-              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
               <i class="{{ service.icon | default: 'fas fa-shopping-cart' }} fa-stack-1x fa-inverse"></i>
             </span>
             <h4 id="serviceTitle" class="service-heading">{{ service.title | markdownify }}</h4>
@@ -26,7 +26,7 @@
             {% endif %}
           </div>
         {% endfor %}
-      </div>  
+      </div>
 	  
     </div>
   </section>
