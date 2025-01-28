@@ -69,11 +69,6 @@ section#contact {
   }
 }
 
-img {
-  position: relative; /* Necesario si el contenedor está en posición estática */
-  transform: translateX(-10px); /* Mueve la imagen 10px hacia la izquierda */
-}
-
 /* Pantallas pequeñas (celulares) */
 @media (max-width: 576px) {
   section#contact {
