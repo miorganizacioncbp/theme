@@ -31,33 +31,58 @@
   }
 }
 
-.scroll-container {
-  display: flex; /* Flexbox para mantener los ítems en fila */
+#scrollContainer {
+  display: flex;
   flex-wrap: nowrap; /* Evita que los ítems bajen a otra fila */
-  gap: 0.5rem; /* Espacio entre ítems */
-  overflow-x: auto; /* Activa el scroll horizontal */
-  padding-bottom: 1rem; /* Espacio para evitar recortes al hacer scroll */
-  scroll-behavior: smooth; /* Desplazamiento suave */
-  scroll-snap-type: x mandatory; /* Ancla los ítems para un desplazamiento uniforme */
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-.scroll-container > div {
+#scrollContainer > div {
   scroll-snap-align: start; /* Cada ítem se alinea al inicio */
+  flex: 0 0 auto; /* Evita que los ítems cambien de tamaño */
+  padding: 16px; /* Espaciado alrededor de los ítems */
 }
 
-.scroll-container::-webkit-scrollbar {
-  height: 6px; /* Tamaño del scrollbar horizontal */
+#scrollContainer::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento en navegadores compatibles */
 }
 
-.scroll-container::-webkit-scrollbar-thumb {
+
+#scrollContainer::-webkit-scrollbar-thumb {
   background-color: #888; /* Color del scrollbar */
   border-radius: 4px;
 }
 
-.scroll-container::-webkit-scrollbar-thumb:hover {
+#scrollContainer::-webkit-scrollbar-thumb:hover {
   background-color: #555; /* Color del scrollbar al pasar el mouse */
 }
 
+.scroll-disabler {
+  width: 100vw;
+  height: 34.4px;
+  position: absolute;
+  background-color: rgba(0,0,0 , 0.0001);
+}
+
+ ::-webkit-scrollbar {
+  display: none;
+}
+
+#scrollElement {
+  padding: 8px;
+}
+
+#serviceTitle{
+  flex-wrap: wrap;
+}
+
+#scrollContainer{
+  .icon-responsive{
+    color: $primary;
+  }
+}
 
 
 

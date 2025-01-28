@@ -160,6 +160,15 @@ es: &DEFAULT_ES
       - title: "Comercio Electrónico"
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
         icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+      - title: "Comercio Electrónico"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+      - title: "Comercio Electrónico"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
+      - title: "Comercio Electrónico"
+        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
+        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
       - title: "Diseño Responsivo"
         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. "
         icon: fas fa-laptop
