@@ -23,18 +23,18 @@
               <h2>{{ project.title }}</h2>
               <p class="item-intro text-muted">{{ project.subtitle }}</p>
 
-              <div class="row justify-content-center" >
+              <div id="scrollContainerModal" class="row justify-content-center scrollContainerModal">
+                <div class="scroll-disabler"></div>
                 {% for foto in project.image %}
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6 gallery-item">
-
+                <div id="scrollElementsModal" class="col-lg-6 col-md-6 col-sm-6 col-6 text-center scrollElementsModal">
                     <div class="gallery-image">
                       <img class="img-fluid" src="{{ foto.url }}" >
                     </div>
                   </div>
                 {% endfor %}
-                </div>
+              </div>
               
-                <p>{{ project.content }}</p>
+              <p>{{ project.content }}</p>
                
             </div>
           </div>
@@ -65,11 +65,18 @@
               <!-- Project Details Go Here -->
               <h2>{{ project.title }}</h2>
               <p class="item-intro text-muted">{{ project.subtitle }}</p>
-              <img
-                class="img-fluid d-block mx-auto"
-                src="{{ project.image }}"
-                alt="{{ project.alt }}"
-              />
+
+              <div class="scrollContainerModal justify-content-center">
+                <div class="scroll-disabler"></div>
+                {% for foto in project.image %}
+                <div id="scrollElementsModal" class="col-lg-6 col-md-6 col-sm-6 col-6 text-center scrollElementsModal">
+                    <div class="gallery-image">
+                      <img class="img-fluid" src="{{ foto.url }}" >
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+              
               <p>{{ project.content }}</p>
             
             </div>
@@ -83,3 +90,28 @@
 {% endif %}
 {% endfor %}
 <!-- End Portfolio Modals -->
+
+<script>
+  const scrollContainerModal = document.getElementById('scrollContainerModal');
+  const scrollElementsModal = scrollContainerModal.querySelectorAll('#scrollElementsModal');
+
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.right > 0;
+  }
+
+  window.addEventListener('load', () => {
+    const scrollWidth = scrollContainerModal.scrollWidth;
+
+    setInterval(() => {
+      const firstElement = scrollContainerModal.querySelector('#scrollElementsModal');
+
+      if (!isElementInViewport(firstElement)) {
+        scrollContainerModal.appendChild(firstElement); // Mueve el primer elemento al final
+        scrollContainerModal.scrollLeft -= firstElement.offsetWidth; // Ajusta la posición del scroll
+      }
+
+      scrollContainerModal.scrollLeft += 1; // Realiza un scroll constante
+    }, 15);
+  });
+</script>

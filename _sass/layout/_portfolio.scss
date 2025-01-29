@@ -143,3 +143,56 @@
     }
   }
 }
+
+.scrollContainerModal {
+  display: flex;
+  flex-wrap: nowrap; /* Evita que los ítems bajen a otra fila */
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  .icon-responsive{
+    color: $primary;
+  }
+ 
+}
+
+.scrollContainerModal > div {
+  scroll-snap-align: start; /* Cada ítem se alinea al inicio */
+  flex: 0 0 auto; /* Evita que los ítems cambien de tamaño */
+  padding: 16px; /* Espaciado alrededor de los ítems */
+}
+
+.scrollContainerModal::-webkit-scrollbar {
+  display: none; /* Oculta la barra de desplazamiento en navegadores compatibles */
+}
+
+
+.scrollContainerModal::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color del scrollbar */
+  border-radius: 4px;
+}
+
+.scrollContainerModal::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Color del scrollbar al pasar el mouse */
+}
+
+.scroll-disabler {
+  width: 100vw;
+  height: 34.4px;
+  position: absolute;
+  background-color: rgba(0,0,0 , 0.0001);
+}
+
+ ::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollElementsModal {
+  padding: 8px;
+  flex-wrap: nowrap;
+}
+
+#serviceTitle{
+  flex-wrap: wrap;
+}
