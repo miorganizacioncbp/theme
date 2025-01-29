@@ -30,6 +30,8 @@ author     : Your Name
 
 locale: "es-ES" # See available languages in _data/sitetext.yml
 
+loader: "Cargando tu viaje..."
+
 analytics:
   google: #Google Analytics tracking code here
 

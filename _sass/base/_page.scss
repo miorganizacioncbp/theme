@@ -99,13 +99,12 @@ h6 {
 
 // Highlight color customization
 ::-moz-selection {
-  background: $primary;
+  background: #fff;
   text-shadow: none;
 }
 
 ::selection {
-  background: $primary;
-  text-shadow: none;
+  background-color: rgba(211, 211, 211, 0.5); /* Gris claro con transparencia */
 }
 
 img::selection {
