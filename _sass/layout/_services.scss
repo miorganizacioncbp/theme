@@ -37,6 +37,10 @@
   overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  overflow: hidden; /* Oculta el scroll manual */
+  pointer-events: none; /* Evita que el usuario lo toque en móviles */
+  touch-action: none; /* Desactiva gestos táctiles */
+  scrollbar-width: none;
 }
 
 #scrollContainer > div {

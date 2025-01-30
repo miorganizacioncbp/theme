@@ -29,17 +29,21 @@
 
 			<script>
 				window.addEventListener("load", () => {
-					setTimeout(() => {
-						// Oculta el loader
-						document.querySelector(".loader-wrapper").style.display = "none";
-						
-						// Muestra el contenido
-						document.querySelector(".content").style.display = "block";
+					// Establece un tiempo máximo para que el loader se oculte (por ejemplo, 3 segundos)
+					const maxLoadTime = 4000; // 3000 ms = 3 segundos
 
-						// Cambia el overflow del body a visible
+					setTimeout(() => {
+						// Si el loader sigue visible después del tiempo máximo, lo ocultamos
+						document.querySelector(".loader-wrapper").style.display = "none";
+						document.querySelector(".content").style.display = "block";
 						document.body.style.overflowY = "visible"; 
-					}, 100);
-				});
+					}, maxLoadTime);
+
+					// Si la página carga antes del tiempo máximo, se oculta el loader inmediatamente
+					document.querySelector(".loader-wrapper").style.display = "none";
+					document.querySelector(".content").style.display = "block";
+					document.body.style.overflowY = "visible";
+					});
 			  </script>
 
 

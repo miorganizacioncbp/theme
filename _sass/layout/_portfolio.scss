@@ -72,6 +72,15 @@
   }
 }
 
+@media (max-width: 576px) {
+  #portfolio {
+    .portfolio-item {
+      margin: 0 0 5px;
+      padding: 5px;
+    }
+  }
+}
+
 .portfolio-modal {
   .modal-dialog {
     margin: 5% 5%;

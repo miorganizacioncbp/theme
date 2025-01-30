@@ -66,27 +66,21 @@
 <!-- End Services -->
 
 <script>
-  const scrollContainer = document.getElementById('scrollContainer');
-  const scrollElements = scrollContainer.querySelectorAll('#scrollElement');
+  window.addEventListener("load", () => {
+  const scrollContainer = document.getElementById("scrollContainer");
 
-  function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return rect.right > 0;
+  function scrollContinuo() {
+    scrollContainer.scrollLeft += 1; // Mueve el scroll hacia la derecha
+
+    // Si el scroll llega al final, mueve el primer elemento al final y reajusta
+    if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
+      scrollContainer.appendChild(scrollContainer.firstElementChild);
+      scrollContainer.scrollLeft -= scrollContainer.firstElementChild.offsetWidth;
+    }
   }
 
-  window.addEventListener('load', () => {
-    const scrollWidth = scrollContainer.scrollWidth;
+  setInterval(scrollContinuo, 15); // Ajusta la velocidad del scroll
+});
 
-    setInterval(() => {
-      const firstElement = scrollContainer.querySelector('#scrollElement');
-
-      if (!isElementInViewport(firstElement)) {
-        scrollContainer.appendChild(firstElement); // Mueve el primer elemento al final
-        scrollContainer.scrollLeft -= firstElement.offsetWidth; // Ajusta la posición del scroll
-      }
-
-      scrollContainer.scrollLeft += 1; // Realiza un scroll constante
-    }, 15);
-  });
 
 </script>
