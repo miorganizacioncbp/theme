@@ -60,7 +60,7 @@ section#contact {
 /* Pantallas medianas (tablets) */
 @media (max-width: 768px) {
   section#contact {
-    background-position: 80px center;
+    background-position: -900px center;
     background-size: cover;
   }
   .btn-responsive {
@@ -72,7 +72,7 @@ section#contact {
 /* Pantallas pequeñas (celulares) */
 @media (max-width: 576px) {
   section#contact {
-    background-position: 80px center;
+    background-position: 900px center;
     background-size: cover;
   }
   .btn-responsive {
