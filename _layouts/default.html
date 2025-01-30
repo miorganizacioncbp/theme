@@ -29,21 +29,22 @@
 
 			<script>
 				window.addEventListener("load", () => {
-					// Establece un tiempo máximo para que el loader se oculte (por ejemplo, 3 segundos)
-					const maxLoadTime = 2000; // 3000 ms = 3 segundos
+					// Establece un tiempo máximo para que el loader se oculte (por ejemplo, 2 segundos)
+					const maxLoadTime = 2000; // 2000 ms = 2 segundos
 
-					setTimeout(() => {
-						// Si el loader sigue visible después del tiempo máximo, lo ocultamos
-						document.querySelector(".loader-wrapper").style.display = "none";
-						document.querySelector(".content").style.display = "block";
-						document.body.style.overflowY = "visible"; 
-					}, maxLoadTime);
-
-					// Si la página carga antes del tiempo máximo, se oculta el loader inmediatamente
+					// Esta función oculta el loader y muestra el contenido
+					const hideLoader = () => {
 					document.querySelector(".loader-wrapper").style.display = "none";
 					document.querySelector(".content").style.display = "block";
 					document.body.style.overflowY = "visible";
-					});
+					};
+
+					// Si la página carga antes del tiempo máximo, ocultamos el loader inmediatamente
+					setTimeout(hideLoader, maxLoadTime);
+
+					// Si la página carga antes del tiempo máximo, se oculta el loader inmediatamente
+					hideLoader();
+				});
 			  </script>
 
 
